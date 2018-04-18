@@ -1,0 +1,1 @@
+export { awesomeFunction } from './awesomeModule';

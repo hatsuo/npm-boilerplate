@@ -1,6 +1,6 @@
 {
-  "name": "npm-module-boilerplate-es6",
-  "version": "2.0.0",
+  "name": "npm-boilerplate",
+  "version": "0.1.0",
   "description": "Boilerplate for npm modules.",
   "main": "./lib/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
+    "prepare": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "files": [
     "lib",
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Travelport-Ukraine/npm-module-boilerplate.git"
+    "url": "git+https://github.com/hatsuo/npm-boilerplate.git"
   },
   "keywords": [
     "boilerplate",
@@ -28,12 +28,12 @@
     "node",
     "javascript"
   ],
-  "author": "Mark mail.ormark@gmail.com",
+  "author": "Aaron Burmeister",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Travelport-Ukraine/npm-module-boilerplate/issues"
+    "url": "https://github.com/hatsuo/npm-boilerplate/issues"
   },
-  "homepage": "https://github.com/Travelport-Ukraine/npm-module-boilerplate#readme",
+  "homepage": "https://github.com/hatsuo/npm-boilerplate#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
