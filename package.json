@@ -4,6 +4,7 @@
   "description": "Boilerplate for npm modules.",
   "main": "./lib/index.js",
   "scripts": {
+    "init": "ls setup.js && (npm install --no-save replace-in-file && node setup.js && rm setup.js && npm uninstall replace-in-file && npm install) || echo already configured",
     "clean": "rimraf lib",
     "test": "cross-env BABEL_ENV=commonjs mocha --require babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
